@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "912518233358",
+    "project_id": "ema-application-e38fa",
+    "storage_bucket": "ema-application-e38fa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:912518233358:android:9e0b0a264306531746eb5f",
+        "android_client_info": {
+          "package_name": "com.oshrink.devicedoctor"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCG_jN7GKTrFZDS4W_2TeKbaquh87EOV6o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

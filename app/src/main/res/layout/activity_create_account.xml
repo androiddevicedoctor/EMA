@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/blue_primary"
+    tools:context=".loginSignup.CreateAccount">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="50dp">
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="110dp"
+            android:layout_height="85dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/splesh_logo" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="26dp"
+            android:textStyle="bold"
+            android:text="Create an account"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/shape_lightblack_round_corner"
+            android:elevation="10dp"
+            android:paddingBottom="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+            <EditText
+                android:id="@+id/first_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/shape_lightblack_whitestork_round_corner"
+                android:hint="First name"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:paddingTop="15dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="15dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/light_black_hint"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toStartOf="@+id/last_name"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/last_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/shape_lightblack_whitestork_round_corner"
+                android:hint="Last name"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:paddingTop="15dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="15dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/light_black_hint"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/first_name"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/mobile_number"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shape_lightblack_whitestork_round_corner"
+                android:hint="Mobile number"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:paddingTop="15dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="15dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/light_black_hint"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/last_name"
+                app:layout_constraintStart_toStartOf="@+id/first_name"
+                app:layout_constraintTop_toBottomOf="@+id/first_name" />
+
+            <TextView
+                android:id="@+id/date_of_birth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Date of birth"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/mobile_number"
+                app:layout_constraintStart_toStartOf="@+id/mobile_number"
+                app:layout_constraintTop_toBottomOf="@+id/mobile_number" />
+
+            <Spinner
+                android:id="@+id/spinner_day"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/shape_lightblack_whitestork_round_corner"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                app:layout_constraintEnd_toStartOf="@+id/spinner_month"
+                app:layout_constraintStart_toStartOf="@+id/date_of_birth"
+                app:layout_constraintTop_toBottomOf="@+id/date_of_birth" />
+
+            <Spinner
+                android:id="@+id/spinner_month"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/shape_lightblack_whitestork_round_corner"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                app:layout_constraintBottom_toBottomOf="@+id/spinner_day"
+                app:layout_constraintEnd_toStartOf="@+id/spinner_year"
+                app:layout_constraintStart_toEndOf="@+id/spinner_day"
+                app:layout_constraintTop_toTopOf="@+id/spinner_day" />
+
+            <Spinner
+                android:id="@+id/spinner_year"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_lightblack_whitestork_round_corner"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                app:layout_constraintBottom_toBottomOf="@+id/spinner_month"
+                app:layout_constraintEnd_toEndOf="@+id/date_of_birth"
+                app:layout_constraintStart_toEndOf="@+id/spinner_month"
+                app:layout_constraintTop_toTopOf="@+id/spinner_month" />
+
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Gender"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/date_of_birth"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/date_of_birth"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_month" />
+
+            <RadioGroup
+                android:id="@+id/gender_radio_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="@+id/gender"
+                app:layout_constraintStart_toStartOf="@+id/gender"
+                app:layout_constraintTop_toBottomOf="@+id/gender">
+
+                <RadioButton
+                    android:id="@+id/male_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/custome_checkbox"
+                    android:button="@drawable/custome_checkbox"
+                    android:checked="true"
+                    android:drawableRight="@drawable/circle_unchacked_24"
+                    android:drawablePadding="5dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="5dp"
+                    android:text="Male"
+                    android:textColor="@color/light_black_hint"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/female_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/custome_checkbox"
+                    android:button="@drawable/custome_checkbox"
+                    android:checked="false"
+                    android:drawableRight="@drawable/circle_unchacked_24"
+                    android:drawablePadding="5dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="5dp"
+                    android:text="Female"
+                    android:textColor="@color/light_black_hint"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/custom_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/custome_checkbox"
+                    android:button="@drawable/custome_checkbox"
+                    android:checked="false"
+                    android:drawableRight="@drawable/circle_unchacked_24"
+                    android:drawablePadding="5dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="5dp"
+                    android:text="Coustom"
+                    android:textColor="@color/light_black_hint"
+                    android:textSize="16sp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="By clicking Sign Up, you agreed to our Terms, Privacy and Cookies Policy You may receive SMS notifications from us and can otp out at any time."
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/gender"
+                app:layout_constraintStart_toStartOf="@+id/gender"
+                app:layout_constraintTop_toBottomOf="@+id/gender_radio_group" />
+
+            <TextView
+                android:id="@+id/signup_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shape_yellow_button"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingTop="15dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="15dp"
+                android:text="Sign Up"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/textView8"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView8"
+                app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+            <TextView
+                android:id="@+id/already_account"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="Already have an account?"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/signup_button"
+                app:layout_constraintHorizontal_bias="0.6"
+                app:layout_constraintStart_toStartOf="@+id/signup_button"
+                app:layout_constraintTop_toBottomOf="@+id/signup_button" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
